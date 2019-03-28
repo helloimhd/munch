@@ -36,12 +36,25 @@
 
             <div class="game-container">
                <!--  <div id="scoreBoard">Score</div> -->
+               <div id="start" onclick="startGame()">
+                    Start Game
+               </div>
+
+                <div id="startMobile" onclick="startGameMobile()">
+                    Start Game
+                </div>
+
 
                 <div class="bar-container">
                     <img id="bar" src="images/Pacman.png">
                 </div>
 
-                <form action="#" onsubmit="startGame()" autocomplete="off">
+                <form action="#" onsubmit="startGame()" autocomplete="off" id="browser">
+                  <input type="text" placeholder="Enter your name" id="getPlayerName">
+                </form>
+
+
+                <form action="#" onsubmit="startGameMobile()" autocomplete="off" id="mobile">
                   <input type="text" placeholder="Enter your name" id="getPlayerName">
                 </form>
 
@@ -66,6 +79,8 @@
 
         <script src="js/functionScript.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/mobileScript.js"></script>
+
 
     </body>
 </html>

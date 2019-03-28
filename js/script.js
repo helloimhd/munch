@@ -16,6 +16,7 @@ var bombIcons = ["💣"];
 var mainContainer = document.querySelector(".main-container");
 var gameContainer = document.querySelector(".game-container");
 var bar = document.querySelector(".bar-container");
+var start = document.getElementById("start");
 var startDisplay = null;
 var position = 0;
 
@@ -34,12 +35,13 @@ console.log(fruitIcons)
 
 
 //startGame();
-createStartDisplay();
+//createStartDisplay();
 
 
 function startGame() {
     //console.log(createStartDisplay())
-    startDisplay.remove();
+    start.remove();
+    //startDisplay.remove();
     bar.style.visibility = "visible";
     getPlayerName.style.visibility = "hidden";
     createLives();

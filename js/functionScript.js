@@ -68,7 +68,7 @@ function control() {
     var sliderValue;
     slider.oninput = function() {
       var sliderValue = this.value;
-      console.log(sliderValue)
+    //  console.log(sliderValue)
 
       bar.style.left = sliderValue + "px";
     }

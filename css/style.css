@@ -140,6 +140,18 @@ textarea:focus, input:focus{
 	cursor: url("https://img.icons8.com/wired/64/ffffff/cursor.png"), auto;
 }
 
+#startMobile {
+	width: 350px;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 45px;
+	position: absolute;
+	top: 100px;
+	cursor: url("https://img.icons8.com/wired/64/ffffff/cursor.png"), auto;
+}
+
 #gameOver {
 	text-transform: uppercase;
 	color: white;
@@ -174,6 +186,15 @@ textarea:focus, input:focus{
 .slidecontainer {
 	visibility: hidden;
 }
+
+#mobile, #startMobile {
+	visibility: hidden;
+}
+
+/*#startMobile {
+	visibility: hidden;
+}*/
+
 /*If the browser window is 600px or smaller, the background color will be lightblue:*/
 @media only screen and (max-width: 600px) {
 	h1 {
@@ -227,5 +248,22 @@ margin: auto;*/
   background: url('../images/small-watermelon.png');
   cursor: pointer;
 }
+
+#browser, #start {
+	visibility: hidden;
+}
+
+#mobile, #startMobile {
+	visibility: visible;
+}
+
+/*#start {
+	visibility: hidden;
+}
+
+#startMobile {
+	visibility: visible;
+}*/
+
 
 }   /*end of @media*/

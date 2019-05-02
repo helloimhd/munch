@@ -108,8 +108,6 @@ var mobileNameInput = document.getElementById("mobile");
 var startMobile = document.getElementById("startMobile");
 
 function startGameMobile() {
-    //console.log(createStartDisplay())
-    //startDisplayMobile.remove();
     startMobile.remove();
     bar.style.visibility = "visible";
     mobileNameInput.style.visibility = "hidden";

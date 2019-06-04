@@ -17,21 +17,22 @@ var mainContainer = document.querySelector(".main-container");
 var gameContainer = document.querySelector(".game-container");
 var bar = document.querySelector(".bar-container");
 var start = document.getElementById("start");
+var instructions = document.getElementById("instructions")
 var startDisplay = null;
 var position = 0;
 
 var getPlayerName = document.getElementById("getPlayerName");
-var playerName = document.getElementById("playerName");
+//var playerName = document.getElementById("playerName");
 var playerScore = document.getElementById("playerScore");
-var highestScore = {
-    name: "Herda",
-    score: 20
-}
+// var highestScore = {
+//     name: "Herda",
+//     score: 20
+// }
 
 /*var correctAudio = document.getElementById("correctAudio");
 var bombAudio = document.getElementById("bombAudio");
 */
-console.log(fruitIcons)
+//console.log(fruitIcons)
 
 
 //startGame();
@@ -41,12 +42,13 @@ console.log(fruitIcons)
 function startGame() {
     //console.log(createStartDisplay())
     start.remove();
+    instructions.remove();
     //startDisplay.remove();
     bar.style.visibility = "visible";
     getPlayerName.style.visibility = "hidden";
     createLives();
-    document.querySelector(".highScore").style.visibility  = "visible";
-    updateHighScore(playerName, playerScore)
+    //document.querySelector(".highScore").style.visibility  = "visible";
+    //updateHighScore(playerName, playerScore)
     moveBar();
 
     // for when game on phone

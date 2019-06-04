@@ -49,12 +49,12 @@
                     <img id="bar" src="images/Pacman.png">
                 </div>
 
-                <form action="#" onsubmit="startGame()" autocomplete="off" id="browser">
+                <form onsubmit="startGame(); return false" autocomplete="off" id="browser">
                   <input type="text" placeholder="Enter your name" id="getPlayerName">
                 </form>
 
 
-                <form action="#" onsubmit="startGameMobile()" autocomplete="off" id="mobile">
+                <form onsubmit="startGameMobile(); return false" autocomplete="off" id="mobile">
                   <input type="text" placeholder="Enter your name" id="getPlayerName">
                 </form>
 
@@ -64,12 +64,18 @@
               <input type="range" min="1" max="300" value="0" class="slider" id="myRange">
             </div>
 
-            <div class="highScore">
+            <!-- <div class="highScore">
                 <div id="scoreHeading">Highest Score</div>
                 <div class="details">
                     <div id="playerName"></div>
                     <div id="playerScore"></div>
                 </div>
+            </div> -->
+
+            <div id="instructions">
+                <div id="instructionHeader">Eat the falling fruits!</div>
+                <p>Browser: Move by pressing & holding left/right keys</p>
+                <p>Mobile: Move using the watermelon slider</p>
             </div>
 
 

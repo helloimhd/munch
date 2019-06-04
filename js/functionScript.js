@@ -237,7 +237,7 @@ function gameOver() {
     playGameOverAudio()
     bar.remove();
 
-    updateHighScore(playerName, playerScore)
+    //updateHighScore(playerName, playerScore)
 
     var allCurrentFruits = document.querySelectorAll(".fruits");
     // take fruits list and remove every item
@@ -320,20 +320,20 @@ function createStartDisplay() {
 
 }
 
-function updateHighScore(nameElement, scoreElement) {
-    //console.log(score);
-    if (highestScore.score < score) {
-        highestScore.score = score;
-        scoreElement.textContent = `Score: ${score}`;
+// function updateHighScore(nameElement, scoreElement) {
+//     //console.log(score);
+//     if (highestScore.score < score) {
+//         highestScore.score = score;
+//         scoreElement.textContent = `Score: ${score}`;
 
-        highestScore.name = getPlayerName.value;
-        nameElement.textContent = `Name: ${getPlayerName.value}`;
+//         highestScore.name = getPlayerName.value;
+//         nameElement.textContent = `Name: ${getPlayerName.value}`;
 
-    } else {
-        scoreElement.textContent = `Score: ${highestScore.score}`;
-        nameElement.textContent = `Name: ${highestScore.name}`;
-    }
-}
+//     } else {
+//         scoreElement.textContent = `Score: ${highestScore.score}`;
+//         nameElement.textContent = `Name: ${highestScore.name}`;
+//     }
+// }
 
 function closeMouth() {
     var barImg = document.querySelector("img");

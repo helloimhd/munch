@@ -62,8 +62,7 @@ img {
 }
 
 
-.highScore {
-	/*border: 2px solid red;*/
+/*.highScore {
 	margin: auto;
 	padding: 10px;
 	text-transform: uppercase;
@@ -71,13 +70,32 @@ img {
 	font-family: 'Freckle Face', cursive;
 	font-size: 30px;
 	visibility: hidden;
+}*/
+
+#instructions {
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Margarine', cursive;
+	text-transform: uppercase;
 }
 
-.details {
+#instructionHeader {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 20px;
+	text-transform: none;
+}
+
+
+/*.details {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-}
+}*/
 
 form {
 	position: absolute;
@@ -103,21 +121,21 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-#playerName {
+/*#playerName {
 	text-transform: none;
 	text-align: center;
 	font-family: 'Freckle Face', cursive;
 	font-size: 30px;
 	width: 200px;
-}
+}*/
 
-#playerScore {
+/*#playerScore {
 	text-transform: none;
 	text-align: center;
 	font-family: 'Freckle Face', cursive;
 	font-size: 30px;
 	width: 200px;
-}
+}*/
 
 #deduct {
 	position: absolute;

@@ -106,14 +106,16 @@ function createFruitMobile(leftPosition) {
 
 var mobileNameInput = document.getElementById("mobile");
 var startMobile = document.getElementById("startMobile");
+var instructions = document.getElementById("instructions")
 
 function startGameMobile() {
     startMobile.remove();
+    instructions.remove();
     bar.style.visibility = "visible";
     mobileNameInput.style.visibility = "hidden";
     createLives();
-    document.querySelector(".highScore").style.visibility  = "visible";
-    updateHighScore(playerName, playerScore)
+    //document.querySelector(".highScore").style.visibility  = "visible";
+    //updateHighScore(playerName, playerScore)
     moveBar();
 
     // for when game on phone

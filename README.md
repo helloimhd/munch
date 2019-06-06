@@ -10,3 +10,7 @@ How to play the game:
 
 * Mobile 
 	- Move using the watermelon slider 
+	
+	
+Try it here >>>>>
+https://helloimhd.github.io/munch
